@@ -39,7 +39,7 @@ Weather Now is a sleek, responsive, and installable Progressive Web App (PWA) bu
    cd weather-app
 
 
-## View live here (replace with your URL)
+## View live here https://psderrick.github.io/Weather-App/
 
 ##  How to Install
 On supported browsers:
