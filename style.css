@@ -1,0 +1,143 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background: linear-gradient(120deg, #2b5876, #4e4376);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: background 0.5s ease-in-out;
+}
+body.sunny {
+  background: url('https://media.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif') center/cover no-repeat;
+}
+
+body.cloudy {
+  background: url('https://media.giphy.com/media/l3vR85PnGsBwu1PFK/giphy.gif') center/cover no-repeat;
+}
+
+body.rainy {
+  background: url('https://media.giphy.com/media/xT0xeJpnrWC4XWblEk/giphy.gif') center/cover no-repeat;
+}
+
+body.clear {
+  background: linear-gradient(to right, #2b5876, #4e4376);
+}
+
+
+.app {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.weather-card {
+  background: rgba(148, 35, 35, 0.445);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.app-title {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.search {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #06b6d4;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #0891b2;
+}
+
+.loading {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  display: none;
+}
+
+.icon {
+  width: 80px;
+  margin: 1rem auto;
+}
+
+.main-temp {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.details {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1rem;
+  gap: 1rem;
+}
+
+.error-message {
+  margin-top: 1rem;
+  color: #ffbaba;
+  font-size: 0.9rem;
+}
+
+.location-banner {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #cce7ff;
+  font-style: italic;
+}
+
+#loading {
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+
+/* Responsive */
+@media (min-width: 768px) {
+  .weather-card {
+    padding: 3rem;
+    max-width: 500px;
+  }
+
+  .main-temp {
+    font-size: 3rem;
+  }
+}
